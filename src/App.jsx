@@ -67,10 +67,10 @@ function Calculator() {
   }
 
   function handleDisplay() {
-    if (curVal.length === 0) {
+    if (curVal === "") {
       return "0";
-    } else if (curVal === ".") {
-      return "0."; 
+    } else if (curVal === "0") {
+      return "0.";
     } else {
       return parseFloat(curVal).toLocaleString();
     }
@@ -171,4 +171,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
